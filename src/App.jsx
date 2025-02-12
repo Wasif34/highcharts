@@ -756,19 +756,12 @@ function App() {
         style={{
           display: "grid",
           gridTemplateColumns: "1fr 1fr 1fr",
+          gap: "0.5rem",
         }}
       >
         <HighchartsReact highcharts={Highcharts} options={options} />
         <HighchartsReact highcharts={Highcharts} options={pieOptions} />
         <HighchartsReact highcharts={Highcharts} options={histogramOptions} />
-      </div>
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr 1fr",
-          gap: "0.5rem",
-        }}
-      >
         <HighchartsReact highcharts={Highcharts} options={options1} />
         <HighchartsReact highcharts={Highcharts} options={areaChartOptions} />
         <HighchartsReact highcharts={Highcharts} options={barChartOptions} />
