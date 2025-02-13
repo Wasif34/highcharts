@@ -759,7 +759,7 @@ function App() {
           gap: "0.5rem",
         }}
       >
-        <HighchartsReact highcharts={Highcharts} options={options} />
+        <LineChart options={options} />
         <HighchartsReact highcharts={Highcharts} options={pieOptions} />
         <HighchartsReact highcharts={Highcharts} options={histogramOptions} />
         <HighchartsReact highcharts={Highcharts} options={options1} />
@@ -770,20 +770,10 @@ function App() {
   );
 }
 
-function Title() {
+function LineChart({ options }) {
   return (
-    <div className="title">
-      <h1>Historical population of Ireland </h1>
-      <h2>
-        Source:{" "}
-        <a
-          href="https://en.wikipedia.org/wiki/Historical_population_of_Ireland"
-          target="blank"
-          rel="noopener"
-        >
-          Wikipedia{" "}
-        </a>
-      </h2>
+    <div>
+      <HighchartsReact highcharts={Highcharts} options={options} />
     </div>
   );
 }
