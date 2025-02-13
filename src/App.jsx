@@ -33,6 +33,9 @@ const options = {
     shared: true,
     backgroundColor: "white",
   },
+  credits: {
+    enabled: false,
+  },
 };
 
 const options1 = {
@@ -45,6 +48,9 @@ const options1 = {
     panKey: "shift",
     scrollablePlotArea: {
       minWidth: 600,
+    },
+    credits: {
+      enabled: false,
     },
   },
 
@@ -298,6 +304,9 @@ const histogramOptions = {
   chart: {
     type: "column",
   },
+  credits: {
+    enabled: false,
+  },
   title: {
     text: "Histogram using a column chart",
   },
@@ -366,6 +375,9 @@ const pieOptions = {
   subtitle: {
     text: 'Source:<a href="https://www.mdpi.com/2072-6643/11/3/684/htm" target="_default">MDPI</a>',
   },
+  credits: {
+    enabled: false,
+  },
   plotOptions: {
     series: {
       allowPointSelect: true,
@@ -428,6 +440,9 @@ const pieOptions = {
 const areaChartOptions = {
   chart: {
     type: "area",
+  },
+  credits: {
+    enabled: false,
   },
   accessibility: {
     description:
