@@ -775,11 +775,11 @@ function App() {
         }}
       >
         <LineChart options={options} />
-        <HighchartsReact highcharts={Highcharts} options={pieOptions} />
-        <HighchartsReact highcharts={Highcharts} options={histogramOptions} />
-        <HighchartsReact highcharts={Highcharts} options={options1} />
-        <HighchartsReact highcharts={Highcharts} options={areaChartOptions} />
-        <HighchartsReact highcharts={Highcharts} options={barChartOptions} />
+        <PieChart options={pieOptions} />
+        <HistoChart options={histogramOptions} />
+        <Chart options={options1} />
+        <AreaChart options={areaChartOptions} />
+        <BarChart options={barChartOptions} />
       </div>
     </div>
   );
@@ -787,10 +787,46 @@ function App() {
 
 function LineChart({ options }) {
   return (
-    <div>
+    <div style={{ border: "1px solid #ddd" }}>
+      <HighchartsReact highcharts={Highcharts} options={options} />
+    </div>
+  );
+}
+function PieChart({ options }) {
+  return (
+    <div style={{ border: "1px solid #ddd" }}>
+      <HighchartsReact highcharts={Highcharts} options={options} />
+    </div>
+  );
+}
+function HistoChart({ options }) {
+  return (
+    <div style={{ border: "1px solid #ddd" }}>
       <HighchartsReact highcharts={Highcharts} options={options} />
     </div>
   );
 }
 
+function AreaChart({ options }) {
+  return (
+    <div style={{ border: "1px solid #ddd" }}>
+      <HighchartsReact highcharts={Highcharts} options={options} />
+    </div>
+  );
+}
+function BarChart({ options }) {
+  return (
+    <div style={{ border: "1px solid #ddd" }}>
+      <HighchartsReact highcharts={Highcharts} options={options} />
+    </div>
+  );
+}
+
+function Chart({ options }) {
+  return (
+    <div style={{ border: "1px solid #ddd" }}>
+      <HighchartsReact highcharts={Highcharts} options={options} />
+    </div>
+  );
+}
 export default App;
